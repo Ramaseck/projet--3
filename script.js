@@ -1,11 +1,13 @@
-document.getElementById("searchForm").addEventListener("submit",function(e){
-    e.preventDefault();
-    const termRecherche=document.getElementById("recherche").value;
-    rechercher(termRecherche);
-});
-// fonction de recherche (exemple simple)
-function rechercher(terme){
-    const resultatsDiv = document.getElementById("resultats");
-    resultatsDiv.innerHTML = `<p> Résultats de recherche pour : <strong>${terme}</strong></p>`;
+/*pour pointer tous nos lien */
+const links=document.querySelectorAll("nav li")
 
-}
+icons.addEventListener("click",()=>{ /**quand on click sur le menu burger notre nav va s'afficher */
+    nav.classList.toggle("active"); /* pour cacher la classe  active  en utilisant le croix*/
+
+}); 
+/* pour faire aire chacun de nos trois li un evénemant */
+links.forEach((link) => {
+    link.addEventListener("click",() => { /* lévénement s'appelle click */
+            nav.classList.remove("active"); /**je t'enléve la classe active */
+    });
+});

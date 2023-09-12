@@ -1,92 +1,135 @@
 body{
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-/* header*/
+/* header
 header{
     background-color: brown;
     color: white;
     padding: 20px;
     display: flex;
     align-items: center;
-    gap: 14%;
+    gap: 40%;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 999;
+
     
-    
-    
-}
-@media screen and (max-width: 960px) {
-    *{
+}*/
+
+
+@media screen and (max-width: 660px ) {
+    body{
         margin: 0;
-        padding: 0;
+        padding: 0;}
         
         
-    }
+    
   
-    header{
-        width: 110%;
+    /*.header{
+        width: 100%;
         background-color: brown;
         color: white;
         padding: 10px;
         display: flex;
         align-items: center;
-        gap: 4px;
+        gap: 70%;
         
 
-    }
-  .footer .contact button {
-    margin-left: 60%;
-    padding: 5px;
+    }*/
+    .footer .contact button {
+        margin-left: 60%;
+        padding: 5px;
+        margin-top: 0;
 
   }
-  .footer{
-    width: 160%;
-}
+    .footer{
+        width: 110%;
+        margin-top: -750%;
+        margin-bottom: 10px;
+        padding-top: 0;
+        margin-top: 0;
+    
+    }
+    footer{
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .contacts{
+        gap:4%
+        }
+
 
     
    
-    nav a{
+    /*#nav a{
         color: blue;
+        position: fixed;
+        left: -100%;
+        top: 5%;
+        flex-direction: column;
+        background-color: brown;
+        width: 100%;
+        text-align: center;
+        transform: 0.25s;
 
-    }
+    }*/
 
     footer{
        padding: 40px;
        width: 100%;
     }
+    footer{
+       
+        position: absolute;
+        top:900%;
+        width:100%;
+    }
+        
+        
+    /*.header nav{
+        display: flex;
+        gap: 5px;
+            
+        
+    }*/
+    .contacts .form{
+        margin-top: 20%;
+           
+    }
+    .content .service{
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        
+        
+    }
     
     .recherche{
         display: block;
         margin-right: 10%;
+    /*}
+    #icon{
+        display: block !important;
     }
-}
-@media screen and (max-width: 1260px) {
-  footer{
-       
-    position: absolute;
-    top:900%;
-    width:100%;
+    #icon:before{
+        content: "\2630";
     }
-    
-    
-    .header nav{
-        display: flex;
-        gap: 5px;
-        
-    
+    .active:before {
+        content: "\2715";
     }
-    .contacts .form{
-        margin-top: 20%;
-       
-    }
-    .content .service {
-        display: flex;
-        gap: 30px;
-        flex-wrap: wrap;
-    
-    
-    }
-}
+   .active a{
+        left: 0;
+             
+    }*/
+   
+} 
+
+
+
+
 
 .header{
    
@@ -97,25 +140,18 @@ header{
     font-size: 24px;
     font-weight: bold;
 }
-nav{
-    display: flex;
-    gap: 15px;
+
     
 
 }
-nav a{
-    text-decoration: none;
-    color: white;
-    margin-left:10px ;
 
-}
+
+
 .recherche{
     display: flex;
     margin-right: 50%;
 }
-@media screen and {
-    
-}
+
 
 /*contenu*/
 
@@ -182,7 +218,7 @@ section h1{
 footer{
    
     color: white;
-    margin-top: 15%;
+    
 
 
 }
